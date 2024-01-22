@@ -1,0 +1,15 @@
+<div class="grid grid-cols-1 sm:grid-cols-2">
+  {Astro.props.users.map((user) => (
+    <div class="flex text-xs">
+      <div class="mr-10 mb-4 size-16">
+        <img src={user.avatar} alt="" class="w-full aspect-square rounded-full" />
+      </div>
+      <div>
+        <p>{user.first} {user.last}</p>
+        <p>{user.email}</p>
+        <p>{user.phone}</p>
+        <p>{user.job}</p>
+      </div>
+    </div>
+  ))}
+</div>
