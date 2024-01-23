@@ -6,9 +6,8 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://abonmassip.github.io",
   integrations: [tailwind(), htmx()],
-  output: "static",
+  output: "server",
   adapter: node({
     mode: "standalone",
   }),
