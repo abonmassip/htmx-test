@@ -7,7 +7,6 @@ import node from "@astrojs/node";
 // https://astro.build/config
 export default defineConfig({
   site: "https://abonmassip.github.io",
-  base: "/htmx-test",
   integrations: [tailwind(), htmx()],
   output: "server",
   adapter: node({
