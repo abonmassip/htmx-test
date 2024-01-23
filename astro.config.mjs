@@ -8,7 +8,7 @@ import node from "@astrojs/node";
 export default defineConfig({
   site: "https://abonmassip.github.io",
   integrations: [tailwind(), htmx()],
-  output: "server",
+  output: "static",
   adapter: node({
     mode: "standalone",
   }),
